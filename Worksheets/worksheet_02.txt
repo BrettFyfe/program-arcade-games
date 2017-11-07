@@ -6,37 +6,70 @@
   1. Give an example of a binary number. (While a number such as ``1'' can be a
      binary, decimal, and hexadecimal number, try coming up with an example that
      better illustrates the differences between the different bases of numbers.)
+     
+     001001
 
   2. Give an example of a decimal number.
-
+  
+     82
+     
   3. Give an example of a hexadecimal number.
-
+  
+     7H7
+     
   4. Convert the numbers 1, 10, 100, 1000, and 10000 from binary to decimal.
-
+  
+     1, 2, 4, 8, 16
+     
   5. What is a compiler?
-
+  
+     Turns source code into machine code
+     
   6. What is source code?
-
+  
+     The program the developer wrote into the computer
+     
   7. What is machine language? (Don't just say binary. That's not correct.)
+
+a language that the machine raeds in when a programmer codes
 
   8. What is a first generation language? (Don't just say binary. That's not correct.)
 
+the language used to program the first computers
+
   9. What is a second generation language?
+  
+  general way to organize programming languages
 
  10. What is a third generation language? (Explain, don't just give one example.)
+ 
+ high level programming language; FORTRAN, COBOL
 
  11. What is an interpreter and how does it differ from a compiler?
+ 
+ a program that reads and executes code. interpreters take less time to scan the source code but are slower. easy to debug and dont create any extra data
 
  12. Search the web and find some of the most popular programming languages.
      List the website(s) you got the information from and what the languages are.
 
+buisness.hub- listing from github
+1- java
+2- python
+
  13. Look at the job boards and see what languages people are looking for.
      List the languages and the job board you looked at.
+     
+     
 
  14. What is the difference between the ``syntax'' and ``semantics'' of a
      language?
+     
+     Syntax- structure/form of the code.
+     semantics - deal with the meaning assigned to the symbols
 
  15. Pick a piece of technology, other than a computer you use regularly. Briefly
      describe the hardware and software that run on it.
 
+Tablet: software- runs various apps like youtube or google chrome.
+hardware- runs the base system(task manager, app manager, etc.) makes sure everything is running smoothly.
      
