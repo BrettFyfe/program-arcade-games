@@ -6,8 +6,12 @@
      and punctuation. Please limit the length of each line to 80 characters.
      
   1. Write a line of code that will print your name.
+  
+  print('Brett')
 
   2. How do you enter a comment in a program?
+
+by using a hash(#)
 
   3. What do the following lines of code output?
      	ALSO: Why do they give a different answer?
@@ -15,14 +19,21 @@
      print(2 / 3)
      print(2 // 3)
      
+     line 1- 0.66
+     line 2- 0
+     they print differently due to the extra division mark given
+     
   4. Write a line of code that creates a variable called pi and sets
      	it to an appropriate value.
+          
+          pi = 3.14
 
   5. Why does this code not work?
      
      A = 22
      print(a)
      
+     because you didnt capitalize the variable in the print statement
   6. All of the variable names below can be used. But which ONE of these is
      	the better variable name to use?
      
@@ -33,6 +44,8 @@
      area
      area_of_rectangle
      Area_Of_Rectangle
+     
+     the most specific one as to what you intend to set the variable value to.
      
   7. Which of these variables names are not allowed in Python? (More than one
      might be wrong. Also, this question is not asking about improper names, just
@@ -61,14 +74,19 @@
      total%
      #left
      
+     dont work: 2x, great.big.variable, account.number, account#, total%, 
   8. Why does this code not work?
      
      print(a)
      a = 45
      
+     you assigned the variable after the print statement
+     
   9. Explain the mistake in this code:
      
      pi = float(3.14)
+     
+     the number you wanted to assign to a float is already a float
      
  10. This program runs, but the code still could be better. Explain what is
      wrong with the code.
@@ -79,12 +97,16 @@
      area = pi  * radius ** 2
      print(area)
      
+     you could just set pi straight to 3.14 instead of using a pointless 'x' variable.
+     
  11. Explain the mistake in the following code:
      
      x = 4
      y = 5
      a = ((x) * (y))
      print(a)
+     
+     unnessecary variable 'a', when you can just print the value in the print statement and save some space
      
  12. Explain the mistake in the following code:
      
@@ -93,36 +115,51 @@
      a = 3(x + y)
      print(a)
      
+     there is none
  13. Explain the mistake in the following code:
      
      radius = input(float("Enter the radius:"))
      
+     you set the input before the float, it needs to be reversed
  14. Do all these print the same value? Which one is better to use and why?
      
      print(2/3+4)
      print(2 / 3 + 4)
      print(   2 /    3+    4  )
      
+     yes, the second one cuz its easiest to read.
+     
  15. What is a constant?
 
+a varaible that is set and never changed
  16. How are variable names for constants different than other variable names?
+
+they are always in all caps
 
  17. What is a single quote and what is a double quote?
      Give and label an example of both.
-
+     ', "
+     'hi' < single
+     "hi" < double
+     
  18. Write a Python program that will use escape codes to print a double-quote
      and a new line using the Window's standard. (Note: I'm asking for the Window's
      standard here. Look it up out of Chapter 1.)
 
+"i want to print double quotes\" for some reason"
  19. Can a Python program print text to the screen using single quotes instead
      of double quotes?
+     yes
 
  20. Why does this code not calculate the average?
      
      print(3 + 4 + 5 / 3)
      
-
+ the order of operations is used incorrectly
+ 
  21. What is an ``operator'' in Python?
+
+special symbols that carry logical or mathmatic operation
 
  22. What does the following program print out?
      
@@ -130,15 +167,18 @@
      x + 1
      print(x)
      
-
+     3
  23. Correct the following code:
      
      user_name = input("Enter your name: )"
      
-
+     user_name = input("Enter your name: ")
  24. Correct the following code:
      
      value = int(input(print("Enter your age")))
+     
+     value = int(input("Enter your age: ")
+     print(value)
      
 
 
