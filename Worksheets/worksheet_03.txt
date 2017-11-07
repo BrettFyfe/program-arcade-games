@@ -11,12 +11,26 @@
      else:
          print("It is not hot out.")
      
+     correct indentation
+     
   2. Write a Python program that will take in a number from the user and print
      if it is positive, negative, or zero. Use a proper if/elif/else chain, don't
      just use three if statements.
 
+Number = int(input(‘Enter number: ‘))
+if number ==  0:
+print(‘zero’)
+	elif number <= 0:
+		print(’Negative’)
+	else:
+		print(‘positive’)
+          
   3. Write a Python program that will take in a number from a user and print
      out ``Success'' if it is greater than -10 and less than 10, inclusive. (1 pt)
+     
+     number = int(input(‘Enter Number: ‘))
+if number >= -10 and number <= 10:
+print(‘success’)
 
   4. This runs, but there is something wrong. What is it? (1 pt)
      
@@ -27,6 +41,8 @@
          print("Correct!")
      else:
          print("Incorrect.")
+     
+     it prints the two choices AFTER it asks for the user input.
      
   5. There are two things wrong with this code that tests if x is set to a
      positive value. One prevents it from running, and the other is subtle.
@@ -39,11 +55,15 @@
      else:
          print("x is not positive.")
      
+     unnessecary indent for the if statement. and x is being COMPARED to 4, not SET as 4.
+     
   6. What three things are wrong with the following code? (3 pts)
      
      x = input("Enter a number: ")
      if x = 3
          print("You entered 3")
+     
+     no else clause for if you happen to enter literally any other number but 3. x is SET to 3 in the if clause, not being COMPARED to 3. forgot the colon to define the if statement.
      
   7. There are four things wrong with this code. Identify all four issues. (4 pts)
      
@@ -53,11 +73,15 @@
          else
          print("Incorrect! It is Beaker.")
      
+     a is never defined. else clause doesnt have a colon to define it as such. the input is missing a colon so the user can input the answer. the else clause isnt indented correctly. the variables have terrible names and arent set correctly
+     
   8. This program doesn't work correctly. What is wrong? (1 pt)
      
      x = input("How are you today?")
      if x == "Happy" or "Glad":
          print("That is good to hear!")
+     
+     the no else statement for any other possibility, and the input isnt set to where the user can comfortably enter an answer
      
   9. Look at the code below. Write you best guess here on what it will print.
      Next, run the code and see if you are correct.
@@ -79,6 +103,14 @@
      if z:
          print("Buzz")
      
+     guess- x= 5
+         "Buzz"
+         
+     actual- x= 5
+     y = false
+     z = true
+     Buzz
+     
  10. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
      
@@ -97,6 +129,17 @@
      print(x == 5 and y == 5)
      print(x == 5 or y == 5)
      
+     true
+     false
+     true
+     false
+     false
+     false < wrong
+     true < wrong
+     false
+     true
+     false 
+     false < wrong
  11. Look at the code below. Write you best guess on what it will print.
      Next, run the code and see if you are correct. (2 pts)
      
@@ -110,7 +153,14 @@
      print( (2 == 2) == True )
      print(3 < "3")
      
-
+     true
+     false
+     true 
+     true
+     true
+     true < wrong
+     true < wrong
+     true
  12. What things are wrong with this section of code?
      The programmer wants to set the money variable according to
      the initial occupation the user selects. (1 pt)
@@ -130,6 +180,8 @@
      else if user_input = C:
          money = 50
 
+
+userinput needs to be first, and they need to show all the options afterwards. 
      
 
      
