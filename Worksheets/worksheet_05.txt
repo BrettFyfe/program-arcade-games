@@ -5,65 +5,91 @@
      Reminder: Please use full sentences, capital letters, and proper grammar
      where appropriate.
      
-  1. Explain how the computer coordinate system differs from the standard Cartesian
-     coordinate system. There are two main differences. List both.
+  1. 1. Explain how the computer coordinate system differs from the standard Cartesian coordinate system. There are two main differences. List both.
+  
+The y co-ordinates works backwards 
 
-  2. Before a Python Pygame program can use any functions
-     like pygame.display.set_mode(), what two lines of code must occur first?
+2. Before a Python Pygame program can use any functions like pygame.display.set_mode(), what two lines of code must occur first?
 
-  3. Explain how WHITE = (255, 255, 255) represents a color.
+Set color variables and set the size of the text window
 
-  4. When do we use variable names for colors in all upper-case, and when do we
-     use variable names for colors in all lower-case? (This applies to all variables,
-     not just colors.)
+3. Explain how WHITE = (255, 255, 255) represents a color.
 
-  5. What does the pygame.display.set_mode() function do?
+Its the a combination of red green and white on the color spectrum.
 
-  6. What does this for event in pygame.event.get() loop do?
+4. When do we use variable names for colors in all upper-case, and when do we use variable names for colors in all lower-case? (This applies to all variables, not just colors.)
 
-  7. What is pygame.time.Clock used for?
-
-  8. For this line of code: (3 pts)
+	fixed variables are in all caps always and lower case could change
      
-     pygame.draw.line(screen, GREEN, [0, 0], [100, 100], 5)
-     
-     * What does screen do?
-     * What does [0, 0] do?
-     * What does [100, 100] do?
-     * What does 5 do?
-     
+5. What does the pygame.display.set_mode() function do?
 
-  9. What is the best way to repeat something over and over in a drawing?
+Tells the program how big the window is going to be 
 
- 10. When drawing a rectangle, what happens if the specified line width is zero?
+6. What does this for event in pygame.event.get() loop do?
 
- 11. Describe the ellipse drawn in the code below.
-     * What is the x, y of the origin coordinate?
-     * What does the origin coordinate specify? The center of the circle?
-     * What is the length and the width of the ellipse?
-     
-     
-     pygame.draw.ellipse(screen, BLACK, [20, 20, 250, 100], 2)
-     
- 12. When drawing an arc, what additional information is needed over drawing
-     an ellipse?
+Helps manage the pygame event queue
 
- 13. Describe, in general, what are the three steps needed when printing text to
-     the screen using graphics?
+7. What is pygame.time.Clock used for?
 
- 14. When drawing text, the first line of the three lines needed to draw text
-     should actually be outside the main program loop. It should only run once at
-     the start of the program. Why is this? You may need to ask.
+Tells the program how many times to update the screen per second
 
- 15. What are the coordinates of the polygon that the code below draws?
-     
-     pygame.draw.polygon(screen, BLACK, [[50,100],[0,200],[200,200],[100,50]], 5)
-     
- 16. What does pygame.display.flip() do?
+8. For this line of code: (3 pts)
+pygame.draw.line(screen, GREEN, [0, 0], [100, 100], 5)
 
- 17. What does pygame.quit() do?
+What does screen do?
 
- 18. Look up on-line how the pygame.draw.circle works. Get it working
-     and paste a working sample here. I only need the one line of code that draws the
-     circle, but make sure it is working by trying it out in a full working program.
-     
+Tells the program where to draw the shape
+
+What does [0, 0] do?
+
+Tells the starting point
+
+What does [100, 100] do?
+
+Tells the ending point
+
+What does 5 do?
+
+Tells the program the width in pixels
+
+9. What is the best way to repeat something over and over in a drawing?
+
+a for loop
+
+10. When drawing a rectangle, what happens if the specified line width is zero?
+
+It wont draw the rectangle
+
+11. Describe the ellipse drawn in the code below.
+What is the x, y of the origin coordinate? 20, 20
+What does the origin coordinate specify? The center of the circle? The center of the circle
+What is the length and the width of the ellipse? 100 , 250
+pygame.draw.ellipse(screen, BLACK, [20, 20, 250, 100], 2)
+
+12. When drawing an arc, what additional information is needed over drawing an ellipse?
+
+The pi values to show what section of the circle to draw
+
+13. Describe, in general, what are the three steps needed when printing text to the screen using graphics?
+
+Tell the program the text content, the font of text you want to use and the text color.
+
+14. When drawing text, the first line of the three lines needed to draw text should actually be outside the main program loop.
+It should only run once at the start of the program. Why is this? You may need to ask.
+
+So you can set the text to what you want to print
+
+15. What are the coordinates of the polygon that the code below draws?
+pygame.draw.polygon(screen, BLACK, [[50,100],[0,200],[200,200],[100,50]], 5)
+[50,100], [0,200], [200,200], [100,50]
+
+16. What does pygame.display.flip() do?
+
+Updates the screen with everything you've drawn
+
+17. What does pygame.quit() do?
+
+Exits the drawing window
+
+18. Look up on-line how the pygame.draw.circle works. Get it working and paste a working sample here. I only need the one line of code that draws the circle, but make sure it is working by trying it out in a full working program.
+	pygame.draw.circle(50, 50)
