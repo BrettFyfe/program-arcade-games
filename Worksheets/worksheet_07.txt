@@ -8,6 +8,10 @@
 
      
   1. List the four types of data we've covered, and give an example of each:
+  boolean: True
+  string: hi
+  floating point:  8.0
+  integer: 4
 
   2. What does this code print out? For this and the following problems, make
      sure you understand WHY it prints what it does. You don't have to explain it,
@@ -19,11 +23,15 @@
      print(my_list[4])
      print(my_list[5])
      
+      2, 101, index error
+     
   3. What does this code print out?
      
      my_list=[5, 2, 6, 8, 101]
      for my_item in my_list:
          print(my_item)
+     
+     5, 2, 6, 8, 101
      
   4. What does this code print out?
      
@@ -34,12 +42,17 @@
      my_list2[2] = 10
      print(my_list2)
      
+     [5, 2, 6, 10, 101]
+     an index error cuz tuples dont support item assignment
+     
   5. What does this code print out?
      
      my_list = [3 * 5]
      print(my_list)
      my_list = [3] * 5
      print(my_list)
+     
+     [15] [3, 3, 3, 3, 3]
      
   6. What does this code print out?
      
@@ -48,6 +61,7 @@
      	my_list.append(i)
      print(my_list)
      
+     5, 0, 1, 2, 3, 4
   7. What does this code print out?
      
      print(len("Hi"))
@@ -56,18 +70,30 @@
      print(len("2"))
      print(len(2))
      
+     2, 9, 8, 1, index error cuz cant do length of numbers
+     
   8. What does this code print out?
      
      print("Simpson" + "College")
      print("Simpson" + "College"[1])
      print( ("Simpson" + "College")[1] )
      
+     SimpsonCollege
+     Simpsonno
+     i
+     
   9. What does this code print out?
      
      word = "Simpson"
      for letter in word:
          print(letter)
-     
+     S
+     i
+     m
+     p
+     s
+     o
+     n
  10. What does this code print out?
      
      word = "Simpson"
@@ -75,10 +101,14 @@
          word += "College"
      print(word)
      
+     SimspnCollegeCollegeCollege
+     
  11. What does this code print out?
      
      word = "Hi" * 3
      print(word)
+     
+     HiHiHi
      
  12. What does this code print out?
      
@@ -86,16 +116,29 @@
      print("The 3rd spot is: " + my_text[3])
      print("The -1 spot is: " + my_text[-1])
      
+     a space and a period
+     
  13. What does this code print out?
      
      s = "0123456789"
      print(s[1])
      print(s[:3])
      print(s[3:])
-     
+      1 
+      0, 1, 2
+      3, 4, 5, 6, 7, 8, 9
+      
  14. Write a loop that will take in a list of five numbers from the user, adding
      each to an array. Then print the array. Try doing this without looking at the
      book.
+     
+     list1 = []
+
+for times in range(5):
+    num = input('Number: ')
+    list1.append(num)
+    
+print(list1)
 
  15. Write a program that take an array like the following, and print the average.
      Use the len function, don't just use 15, because that won't work if
@@ -105,4 +148,12 @@
      
      my_list = [3,12,3,5,3,4,6,8,5,3,5,6,3,2,4]
      
+my_list= [3,12,3,531,53,53]
+total = 0
+
+for number in my_list:
+    total = total + number
+    
+average = total / len(my_list)
+print(average)
      
